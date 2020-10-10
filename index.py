@@ -29,8 +29,4 @@ pro_names = soup.findAll(
     "div", {"class": "teach-list"})
 
 for title in research_title:
-    print(title.text, end=":")
-    for pro_name in pro_names:
-        names = pro_name.findAll("div", {"class": "item"})
-        for name in names:
-            print(name.text, end=",")
+    print(title.text, end=": \n")
